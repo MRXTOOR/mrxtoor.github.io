@@ -22,8 +22,7 @@
                                 <div
                                     key={card.id}
                                     className={ "card" + (card.value.overturned ? " overturned" : "")}
-                                    onClick={() => this.turnCard(card.id)}
-                                >
+                                    onClick={() => this.turnCard(card.id)}>
                                     {card.value.overturned ? card.value.translate : card.value.word}👀
                                 </div>
                             )
