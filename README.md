@@ -14,18 +14,27 @@
 
 # Реализация
 <h4 align="center">слова пишутся в input после нажатия на кнопку добавить слова добовляются div где и будет находится слова,при нажатии на слово будет показанно второе слово зарание написанное в input от пользователя</h4>
- `                 <div>
-                        {this.state.cards.map(card => {
-                            return(
-                                <div
-                                    key={card.id}
-                                    className={ "card" + (card.value.overturned ? " overturned" : "")}
-                                    onClick={() => this.turnCard(card.id)}
-                                >
-                                    {card.value.overturned ? card.value.translate : card.value.word}👀
-                                </div>
-                            )
-                        })}
-                    </div>`
+ ```html
+<nav class="nav nav-primary">
+  <ul>
+    <li class="tab-conversation active">
+      <a href="#" data-role="post-count" class="publisher-nav-color" data-nav="conversation">
+        <span class="comment-count">0 комментариев</span>
+        <span class="comment-count-placeholder">Комментарии</span>
+      </a>
+    </li>
+    <li class="dropdown user-menu" data-role="logout">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+        <span class="dropdown-toggle-wrapper">
+          <span>
+            Войти
+          </span>
+        </span>
+        <span class="caret"></span>
+      </a>
+    </li>
+  </ul>
+</nav>
+```
 
 
